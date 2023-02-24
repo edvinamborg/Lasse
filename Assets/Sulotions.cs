@@ -12,12 +12,17 @@ System.Random randomGenerator = new System.Random();
         
         //Uppgift_1A();
         //Uppgift_1B();
-        //Uppgift_1C();
         //Uppgift_1D();
-        //Uppgift_1E();
-        //Uppgift_1F();
-        //Uppgift_1G();
-        Uppgift_1H();
+        //Uppgift_2A();
+        //Uppgift_2B();
+        //Uppgift_3A();
+        //Uppgift_3B();
+        //Uppgift_4A();
+        //Uppgift_4C();
+        //Uppgift_5();
+        //Uppgift_6();
+        Uppgift_7A();
+
     }
 
     private void Uppgift_1A()
@@ -35,7 +40,7 @@ System.Random randomGenerator = new System.Random();
 
     }
 
-    private void Uppgift_1C()
+    private void Uppgift_1D()
     {
      
         double två = randomGenerator.Next(1, 7);
@@ -45,7 +50,7 @@ System.Random randomGenerator = new System.Random();
         Debug.Log("nummrena är  " + ett + " och " + två + " summan är " + summa);
     }
 
-    private void Uppgift_1D()
+    private void Uppgift_2A()
     {
         double tärningsögon = randomGenerator.Next(1, 7);
         Debug.Log("Tärningen visar " + tärningsögon);
@@ -61,7 +66,7 @@ System.Random randomGenerator = new System.Random();
         Debug.Log(output);
     }
 
-    private void Uppgift_1E()
+    private void Uppgift_2B()
     {
         double tärningsögon1 = randomGenerator.Next(1, 7);
         double tärningsögon2 = randomGenerator.Next(1, 7);
@@ -79,7 +84,7 @@ System.Random randomGenerator = new System.Random();
         Debug.Log(output);
     }
 
-     private void Uppgift_1F()
+     private void Uppgift_3A()
      {
         int räknare = 1;
         while (räknare < 6)
@@ -89,7 +94,7 @@ System.Random randomGenerator = new System.Random();
         }
      }
 
-    private void Uppgift_1G()
+    private void Uppgift_3B()
     {
         int räknare = 5;
         while (räknare < 21)
@@ -100,13 +105,75 @@ System.Random randomGenerator = new System.Random();
     }
 
 
-    private void Uppgift_1H()
+    private void Uppgift_4A()
     {
         for (int räknare = 1; räknare < 6; räknare = räknare + 1)
         {
             Debug.Log("" + räknare);
         }
     }
+
+
+    private void Uppgift_4C()
+    {
+        for (int räknare = 11; räknare > 0; räknare = räknare - 1, Debug.Log("" + räknare));
+    }
+
+
+
+    private void Uppgift_5()
+    {
+        int räknare = 1;
+        
+        while (räknare != 6)
+        {
+            räknare = randomGenerator.Next(1, 7);
+            if (räknare !=6)
+            {
+                Debug.Log(räknare + ", slår igen");
+            }
+            else if (räknare == 6)
+            {
+                Debug.Log(räknare + "Nu är du klar");
+            }
+        }
+        
+    }
+
+    private void Uppgift_6()
+    {
+        int tärning1 = randomGenerator.Next(1, 7);
+        int tärning2 = randomGenerator.Next(1, 7);
+        Debug.Log(tärning1 +" "+ tärning2);
+        if (tärning1 == tärning2)
+        {
+            if (tärning1 == 6)
+            {
+                Debug.Log("Storvinst");
+            }
+            else
+            {
+                Debug.Log("Liten vinst");
+            }
+        }
+        else
+        {
+            Debug.Log("Förlust");
+        }
+    }
+
+
+    private void Uppgift_7A()
+    {
+        int[] lista = {3, 5, 7, 9, 11, 13};
+       int output = "";
+       foreach (int nummer in lista)
+       {
+        output += (nummer + ", ");
+       }
+       Debug.Log(output);
+    }
+
 
 
 
