@@ -21,7 +21,11 @@ System.Random randomGenerator = new System.Random();
         //Uppgift_4C();
         //Uppgift_5();
         //Uppgift_6();
-        Uppgift_7A();
+        //Uppgift_7A();
+        Uppgift_8();
+        //Crab();
+        
+
 
     }
 
@@ -166,13 +170,47 @@ System.Random randomGenerator = new System.Random();
     private void Uppgift_7A()
     {
         int[] lista = {3, 5, 7, 9, 11, 13};
-       int output = "";
+       string output = "";
+       foreach (int nummer in lista)
+       {
+        output += (nummer + 1 + ", ");
+       }
+       Debug.Log(output);
+    }
+
+    private void Uppgift_8()
+    {
+       List<int> lista = new List<int>(); 
+       lista.Add(3);
+       lista.Add(5);
+       lista.Add(7);
+       lista.Add(9);
+       lista.Add(11);
+       lista.Add(13);
+       string output = "";
        foreach (int nummer in lista)
        {
         output += (nummer + ", ");
        }
        Debug.Log(output);
+        
     }
+
+    private void Crab()
+    {
+
+
+
+
+
+
+
+
+    }
+
+
+
+   
 
 
 
